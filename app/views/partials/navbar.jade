@@ -1,0 +1,13 @@
+//- .header(ng-controller='NavbarCtrl')
+//-   h3.nav.nav-pills.pull-left Job Tracker
+//-   ul.nav.nav-pills.pull-right
+//-     li(ng-repeat='item in menu', ng-class='{active: isActive(item.link)}')
+//-       a(ng-href='{{item.link}}') {{item.title}}
+
+nav(class='navbar navbar-default', ng-controller='NavbarCtrl')
+  .container
+    .navbar-header
+      a.navbar-brand Job Tracker
+      ul.nav.navbar-nav
+        li(ng-repeat='item in menu', ng-class='{active: isActive(item.link)}')
+          a(ng-href='{{item.link}}') {{item.title}}
