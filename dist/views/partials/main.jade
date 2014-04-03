@@ -1,0 +1,8 @@
+
+form(ng-controller='MainCtrl' ng-submit="search()")
+  .well.well-lg
+    h4 Track your job status
+    .input-group
+      input( type="text" class='form-control' placeholder="Order Number" ng-model="jobNumber")
+      span.input-group-btn
+        button.btn.btn-default search!
