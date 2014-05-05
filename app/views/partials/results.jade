@@ -1,12 +1,28 @@
 .panel.panel-default
-    .panel-heading Job description
+    .panel-heading Job details
     .panel-body
         h5 {{job.number}}
         h5 {{job.name}}
         h5 {{job.type}}
 
-.panel.panel-default
-    .panel-heading Pre-Production
-    .panel-body
-        result-timeline
-
+result-timeline
+.row
+  .col-md-4
+    .list-group
+      a.list-group-item Submitted for production
+      a.list-group-item Waiting for Artwork
+      a.list-group-item Waiting for Sign-off
+      a.list-group-item Waiting for Approval
+  .col-md-4
+    .list-group
+      a.list-group-item.active In printing
+      a.list-group-item Finishing
+      a.list-group-item Setup
+      a.list-group-item Breakdown
+      a.list-group-item In Construction
+      a.list-group-item In Transit to venue
+  .col-md-4
+    .list-group
+      a.list-group-item In Delivery Vehicle
+      a.list-group-item Delivered to Site
+      a.list-group-item Ready for Collection
