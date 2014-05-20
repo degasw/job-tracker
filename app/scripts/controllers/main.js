@@ -9,4 +9,14 @@ angular.module('jobTrackerApp')
           $location.path('/results');
         }).error(function(err){$log.log(err)})
       };
+  }).controller('ResultsCtrl',function($scope,$http){
+    $scope.init = function(){
+      $http.get('/api/statusDescriptions').success(function(statusData){
+        $scope.statuses = statusData;
+      }).error(function(err){})
+    };
+    $scope.pre_production = "Pre";
+    $scope.production = "Production";
+    $scope.post_production = "Post";
+    $scope.init();
   });

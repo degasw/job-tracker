@@ -5,24 +5,20 @@
         h5 {{job.name}}
         h5 {{job.type}}
 
-result-timeline
-.row
+
+.row(ng-controller="ResultsCtrl")
   .col-md-4
-    .list-group
-      a.list-group-item Submitted for production
-      a.list-group-item Waiting for Artwork
-      a.list-group-item Waiting for Sign-off
-      a.list-group-item Waiting for Approval
+    ul.status-list
+      li(ng-repeat="status in statuses | filter:pre_production")
+        {{ status.name }}
   .col-md-4
-    .list-group
-      a.list-group-item.active In printing
-      a.list-group-item Finishing
-      a.list-group-item Setup
-      a.list-group-item Breakdown
-      a.list-group-item In Construction
-      a.list-group-item In Transit to venue
+    ul.status-list
+      li(ng-repeat="status in statuses | filter:production")
+        {{ status.name }}
   .col-md-4
-    .list-group
-      a.list-group-item In Delivery Vehicle
-      a.list-group-item Delivered to Site
-      a.list-group-item Ready for Collection
+    ul.status-list
+      li(ng-repeat="status in statuses | filter:post_production")
+        {{ status.name }}
+      //- a.list-group-item In Delivery Vehicle
+      //- a.list-group-item Delivered to Site
+      //- a.list-group-item Ready for Collection
