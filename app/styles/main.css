@@ -48,11 +48,18 @@ ul.status-list li.active {
   background-color: whitesmoke;
 }
 
-ul.status-list li.active::before {
-  background-color: lightblue;
+ul.status-list li.active:before {
+  background-color: whitesmoke;
 }
 
+ul.status-list li.active:after {
+  background-color: lightgrey;
+}
 
+.title {
+  padding: 5px;
+  text-align: left;
+}
 /* Customize container */
 @media (min-width: 768px) {
   .container {

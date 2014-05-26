@@ -17,8 +17,6 @@ angular.module('jobTrackerApp')
     };
 
     $scope.isSelectedStatus = function(status) {
-      console.log("##############" + status);
-      console.log("$$$$$$$$$$$$$$" + $rootScope.job.status);
       return (status == $rootScope.job.status) ? true : false ;
     }
 
