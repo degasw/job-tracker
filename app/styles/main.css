@@ -45,15 +45,13 @@ ul.status-list li {
 }
 
 ul.status-list li.active {
-  background-color: whitesmoke;
-}
-
-ul.status-list li.active:before {
-  background-color: whitesmoke;
-}
-
-ul.status-list li.active:after {
   background-color: lightgrey;
+  color: white;
+  border-color: lightgrey;
+}
+
+ul.status-list li.processed {
+  border-color: lightgrey;
 }
 
 .title {
