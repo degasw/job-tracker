@@ -12,19 +12,19 @@
       h5 Pre-Production
         span.glyphicon.glyphicon-chevron-right
     ul.status-list
-      li(ng-repeat="status in statuses | filter:pre_production | orderBy:ordinal" ng-class="{'active': isSelectedStatus(status.name), 'processed': statusSelected(status.ordinal)}")
+      li(ng-repeat="status in statuses | filter:pre_production | orderBy:'ordinal'" ng-class="{'active': isSelectedStatus(status.name), 'processed': statusSelected(status.ordinal)}")
         {{ status.name }}
   .col-md-4
     .title
       h5 Production
         span.glyphicon.glyphicon-chevron-right
     ul.status-list
-      li(ng-repeat="status in statuses | filter:production | orderBy:ordinal" ng-class="{'active': isSelectedStatus(status.name), 'processed': statusSelected(status.ordinal)}")
+      li(ng-repeat="status in statuses | filter:production | orderBy:'ordinal'" ng-class="{'active': isSelectedStatus(status.name), 'processed': statusSelected(status.ordinal)}")
         {{ status.name }}
   .col-md-4
     .title
       h5 Post-Production
         span.glyphicon.glyphicon-chevron-right
     ul.status-list
-      li(ng-repeat="status in statuses | filter:post_production | orderBy:ordinal" ng-class="{'active': isSelectedStatus(status.name), 'processed': statusSelected(status.ordinal)}")
+      li(ng-repeat="status in statuses | filter:post_production | orderBy:'ordinal'" ng-class="{'active': isSelectedStatus(status.name), 'processed': statusSelected(status.ordinal)}")
         {{ status.name }}

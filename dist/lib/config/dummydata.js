@@ -57,32 +57,32 @@ Status.find({}).remove(function(){
     ordinal: 5,
     name: 'In printing',
     description: 'In printing',
-    type: 'Production'
+    type: 'Prod-status'
   },{
     ordinal: 6,
     name: 'Finishing',
     description: 'Finishing',
-    type: 'Production'
+    type: 'Prod-status'
   },{
     ordinal: 7,
     name: 'Setup',
     description: 'Setup',
-    type: 'Production'
+    type: 'Prod-status'
   },{
     ordinal: 8,
     name: 'Breakdown',
     description: 'Breakdown',
-    type: 'Production'
+    type: 'Prod-status'
   },{
     ordinal: 9,
     name: 'In Construction',
     description: 'In Construction',
-    type: 'Production'
+    type: 'Prod-status'
   },{
     ordinal: 10,
     name: 'In Transit to venue',
     description: 'In Transit to venue',
-    type: 'Production'
+    type: 'Prod-status'
   },{
     ordinal: 11,
     name: 'In Delivery Vehicle',

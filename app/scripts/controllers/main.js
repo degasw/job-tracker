@@ -20,11 +20,18 @@ angular.module('jobTrackerApp')
 
     $scope.isSelectedStatus = function(status) {
       return (status == $rootScope.job.status) ? true : false ;
-    }
+    };
 
     $scope.statusSelected = function(ordinal) {
       return (ordinal < $scope.ordinal) ? true : false ;
-    }
+    };
+
+    $scope.ordinalSort = function(){
+        $scope.sortedList = [];
+        for(var status in $scope.statuses) {
+
+        }
+    };
 
     function getStatusOrdinal() {
       for( var x = 0 ; x <= $scope.statuses.length - 1; x++) {
@@ -32,10 +39,12 @@ angular.module('jobTrackerApp')
           $scope.ordinal = $scope.statuses[x].ordinal.toString();
         }
       }
-    }
+    };
 
     $scope.pre_production = "Pre";
-    $scope.production = "Production";
+    $scope.production = "Prod-status";
     $scope.post_production = "Post";
     $scope.init();
   });
+
+
