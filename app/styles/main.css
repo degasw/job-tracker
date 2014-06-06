@@ -42,16 +42,32 @@ ul.status-list li {
   padding: 5px;
   border: 2px solid;
   border-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
 ul.status-list li.active {
-  background-color: lightgrey;
+  background-color: #428bca;
   color: white;
-  border-color: lightgrey;
+  border-color: #428bca;
+  font-size: 20px;
+  height: 120%;
+  text-align: center;
+}
+
+ul.status-list li.active span {
+  display: block;
+  background-color: #428bca;
+  color: white;
+  border-color: #428bca;
+  font-size: 20px;
+  height: 120%;
 }
 
 ul.status-list li.processed {
-  border-color: lightgrey;
+  opacity: 0.3;
+  background-color: #428bca;
+  color: white;
+  border-color: #428bca;
 }
 
 .title {
